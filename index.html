@@ -14,6 +14,9 @@
   </head>
 
   <body>
+    <div class="Loading-container">Loading
+      <img src="Loading.gif" id="loadingicon">
+    </div>
     <div id="header">
         <a href="Resume.pdf" target="_blank"><button id="Myresume">My Resume</button></a><a href="#footer"><button id="Contact">Contact Me</button></a>
     </div>
@@ -67,5 +70,10 @@
         <a href="https://www.linkedin.com/in/prabhmeet-singh-11446699w/" target="_blank"><img src="linkedin.png" id="linkedinpng" /></a>
         <a href="https://github.com/Prabhmeetchef" target="_blank"><img src="github.png" id="githubpng"/></a>
     </div>
+    <script>
+      setTimeout(function() {
+  document.querySelector('.Loading-container').style.opacity = 0;
+}, 6000);
+    </script>
   </body>
 </html>

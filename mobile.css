@@ -1,0 +1,294 @@
+@media only screen and (max-width:499px){
+    body{
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+    #Mywork{
+        position: absolute;
+        color: black;
+        top: 520px;
+        height: 100px;
+        font-size: 40px;
+        left: 11%;
+        width: 210px;
+        padding: 12px;
+        font-family: 'Times New Roman';
+        border: solid;
+        box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    #sub{
+        position: absolute;
+        font-weight: 400;
+        font-size: 12px;
+        top: 590px;
+        left: 70px;
+    }
+    #goated{
+        position: relative;
+        background-image: url(wallpaper.jpg);
+        background-attachment: fixed;
+        height: 700px;
+        background-size: contain;
+    }
+    #codebroski{
+        position: relative;
+        scale: 0;
+        height: 660px;
+        width: 400px;
+    }
+    #Welcome{
+        position: absolute;
+        color: white;
+        top: 150px;
+        left: 40px;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    html{
+        border: none;
+    }
+    #Myresume{
+        border: none;
+        position: absolute;top: 6px;
+        right: 28%;
+        height: 40px;
+        width: 10%; min-width: 150px;
+        color: black;
+        background: none;
+        cursor: pointer;
+        font-weight: 800;
+        font-size: 1.06rem;
+    }
+    #Contact{
+        position: absolute;
+        top: 6px;
+        right: 2px;
+        height: 40px;
+        width: 10%; min-width: 150px;
+        border: none;
+        background: none;
+        color: black;
+        font-weight: 800;
+        font-size: 1.06rem;
+    }
+    #megagoated{
+        position: relative;
+        width: auto;
+        height: 1320px;
+        background: url(white-paper-texture_1194-5416.avif);
+        border-bottom: solid;
+    }
+    #about{
+        position: relative;
+        top: 250px;
+        left: 40px;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        width: 80%;
+        transition: color 2s ease;
+        line-height: 28px;
+    } img{ display: block; max-width: 100%;}
+    #about:hover{
+        color: #8be181;
+    }
+    #footer{
+        position: absolute;
+        top: 2028px;
+        height: 150px;
+        width: 100%;
+        background-color: black;
+    }
+    #container-logos{
+        position: absolute;
+        height: 42px;
+        width: 12%;
+        top: 25px;
+        left: 84%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #linkedinpng, #githubpng{
+        height: 50px;
+        width: 50px;
+    }
+    #email{
+        position: absolute;
+        color: white;
+        font-size: 15px;
+        font-weight: 800;
+        left: 6%;
+        top: 29px;
+    }
+    #number{
+        position: absolute;
+        color: white;
+        font-size: 22px;
+        left: 6%;
+        top:50px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    #skillbox{
+        position: absolute;
+        border: solid;
+        padding: 10px;
+        top: 50px;
+        left: 10%;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        right: 10%;
+    }
+    #role{
+        font-family: "Pixelify Sans";
+        font-size: 20px;
+    }
+    #lang{
+        font-size: 15px;
+        font-weight: 800;
+        position: relative;
+        top: 8px;
+        color: rgb(255, 153, 0);
+    }
+    #skills,#Libraries{
+        font-size: 10px;
+    }
+    #libandframeworks{
+        font-size: 15px;
+        font-weight: 800;
+        position: relative;
+        top: 12px;
+        color:rgb(247, 8, 255);
+    }
+    #skillbox:hover{
+        transform: scale(1.01);
+        transform: rotate(-1deg);
+    }
+    #Mywork:hover{
+        transform: rotate(4deg)
+    }
+    #box1{
+        position: absolute;
+        height: 250px;
+        width: 290px;
+        background-color: rgba(12,192,223,255);
+        top: 660px;
+        border-radius: 8px;
+        border: solid;
+        left: 40px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    #box2{
+        position: absolute;
+        height: 250px;
+        width: 290px;
+        background-color: rgba(255,0,0,255);
+        top: 940px;
+        border-radius: 8px;
+        border: solid;
+        left: 60px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    #photo{
+        position: absolute;
+        width: 20%;
+        min-width: 150px;
+        top: 290px;
+        right: 10%;
+        border: solid;
+        padding: 4px;
+        transition: all 0.4s ease;
+    }
+    #photo:hover{
+        transform: scale(1.07);
+    }
+    #box1image{
+        position: relative;
+        height: 60px;
+        width: 240px;
+        top: 10px;
+        left: 10px;
+    }
+    #box2image{
+        position: relative;
+        height: 70px;
+        width: 200px;
+        top: 8px;
+        left: 40px;
+    }
+    #Connect{
+        position:absolute;
+        top: 1280px;
+        left: 12%;
+        font-weight: 200;
+        font-size: 1.20rem;
+    }
+    #Healbook{
+        font-size: 12px;
+        text-align: left;
+        color: white;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        width: 225px;
+    }
+    #TrenZing{
+        font-size: 12px;
+        color: white;
+        position: relative;
+        top: 12px;
+        left: 10px;
+        width: 225px;
+        text-align: left;
+    }
+    #healbooklink{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        opacity: 90%;
+        left: 240px;
+        top: 150px; transition: all 0.7s ease;
+    } #healbooklink:hover{ transform: scale(1.08);}
+    #healbookgithub{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        opacity: 90%;
+        left: 240px;
+        top: 200px;
+    } #healbookgithub:hover{ transform: scale(1.08);}
+    #trenzinggithub{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        opacity: 90%;
+        left: 240px;
+        top: 200px;
+    } #trenzinggithub:hover{ transform: scale(1.08);}
+    #Trenzinglink{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        opacity: 80%;
+        left: 240px;
+        top: 150px;
+    }#Trenzinglink:hover{ transform: scale(1.08);}
+    .Loading-container{
+        position: fixed; font-family: "Pixelify Sans"; font-size: 40px;
+        height: 100%; text-align: center; 
+        width: 100%;
+        color: white;justify-content: center;
+        background: none; transition: all 0.4s ease; 
+        z-index: 100000; opacity: 1;
+    }
+    #loadingicon{position:absolute; height: auto; width: 20%; left: 40%; top: 29%;}
+    #header{
+        position:fixed;
+        border-bottom: black solid 6px;
+        background-image: url(white-paper-texture_1194-5416.avif);
+        height: 08%;
+        width: 100%;
+        z-index: 120000;
+    }
+}/* bye */

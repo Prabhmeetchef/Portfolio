@@ -1,3 +1,4 @@
+@media only screen and (min-width:500px){
 body{
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     margin: 0;
@@ -182,7 +183,6 @@ html{
     top: 12px;
     color:rgb(247, 8, 255);
 }
-
 #skillbox:hover{
     transform: scale(1.01);
     transform: rotate(-1deg);
@@ -299,7 +299,7 @@ html{
     opacity: 80%;
     left: 520px;
     top: 540px;
-} #Trenzinglink:hover{ transform: scale(1.08);}
+}#Trenzinglink:hover{ transform: scale(1.08);}
 .Loading-container{
     position: fixed; font-family: "Pixelify Sans"; font-size: 40px;
     height: 100%; text-align: center; 
@@ -309,4 +309,4 @@ html{
     z-index: 100000; opacity: 1;
 }
 #loadingicon{position:absolute; height: auto; width: 20%; left: 40%; top: 29%;}
-/* Bye */
+}/* Bye */

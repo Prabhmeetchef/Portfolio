@@ -56,7 +56,7 @@ html{
     border: solid 2px white;
     border-radius: 20px;
 }
-#vec{ position: absolute; top: 228.8vh;height: 78vh; width: auto;} #ellipse1{position: absolute; top: 239.8vh;left: 32vw;} #ellipse2{position: absolute; top: 274.7vh;left: 32vw;}
+#vec{ position: absolute; top: 228.8vh;height: 78vh; width: auto;} #ellipse1{position: absolute; top: 239.8vh;left: 32vw;} #ellipse2{position: absolute; top: 272.7vh;left: 32vw;}
 #mypfp:hover{
     scale: 1.02;
     transition: scale 0.2s ease;
@@ -68,7 +68,7 @@ html{
     background: none;
     transition: color 0.2s ease;
 }
-#role1{position: absolute; top: 237vh;left: 34vw; font-size: 3.25vh;font-weight: 600;} #role2{position: absolute; top: 271.8vh;left: 34vw; font-size: 3.25vh; font-weight: 600;} #desc1{position: absolute; top: 246.7vh;left: 34vw; font-size: 2.8vh;font-weight: 400;} #corp1{position: absolute; top: 241vh;left: 34vw; font-size: 2.56vh;font-weight: 500; opacity: 40%;} #desc2{position: absolute; top: 283.2vh;left: 34vw; font-size: 2.8vh; font-weight: 400;} #corp2{position: absolute; top: 276.7vh;left: 34vw; font-size: 2.56vh;font-weight: 500; opacity: 40%;}
+#role1{position: absolute; top: 237.2vh;left: 34vw; font-size: 2.9vh;font-weight: 600;} #role2{position: absolute; top: 270.38vh;left: 34vw; font-size: 2.9vh; font-weight: 600;} #desc1{position: absolute; top: 244.7vh;left: 34vw; font-size: 2.8vh;font-weight: 400;} #corp1{position: absolute; top: 241vh;left: 34vw; font-size: 2.28vh;font-weight: 500; opacity: 40%;} #desc2{position: absolute; top: 278.52vh;left: 34vw; font-size: 2.8vh; font-weight: 400;} #corp2{position: absolute; top: 274.6vh;left: 34vw; font-size: 2.29vh;font-weight: 500; opacity: 40%;}
 #megagoated{
     position: relative;
     top: 72px;

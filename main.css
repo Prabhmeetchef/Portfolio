@@ -1,20 +1,18 @@
 @media only screen and (min-width:500px){
-
 body{
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     margin: 0;
 }
-
 #header{
-    top: 0px; left: 0px;
-    position:fixed;
+    position:fixed; top: 0; 
     margin: 0px;
     width: 100vw;
     height: 9vh;
     min-height: 65px;
-    z-index: 500; background-color: white;
+    z-index: 500;
+    background-color: white; box-shadow: 1px 1px 10px black;
 }
-
+#Aboutme{font-family:'Poppins';font-size: 2.6vh; position:relative; top:2.5vh; left: 62.8vw; color: black; background: none;transition: scale 0.2s ease; border: none;} #Aboutme:hover{transform: scale(1.02);} #myprofile{font-family:'Poppins';font-size: 2.6vh; position:relative; top:2.5vh; left: 65.2vw; color: black; background: none;transition: scale 0.2s ease; border: none;} #myprofile:hover{transform: scale(1.02);} #myprojects{font-family:'Poppins';font-size: 2.6vh; position:relative; top:2.5vh; left: 67.48vw; color: black; background: none;transition: scale 0.2s ease; border: none;} #myprojects:hover{transform: scale(1.02);} #myexperience{font-family:'Poppins';font-size: 2.6vh; position:relative; top:2.5vh; left: 70vw; color: black; background: none;transition: scale 0.2s ease; border: none;} #myexperience:hover{transform: scale(1.02);}
 #goated{
     position:relative;
     background-image: url(wallpaper.jpg);
@@ -74,7 +72,7 @@ html{
     top: 72px;
     height: 1610px;
 }
-
+#highlight{position:fixed;top:2vh; height: 5.82vh; background-color: black; z-index: 100000; opacity: 20%; border-radius: 18px; transition: 0.25s ease;}
 #photo1{position: absolute; width: 12vw; height: auto; left: 78vw; opacity: 62%; top: 64vh; scale: 0.8;} #photo2{position: absolute; width: 8vw; height: auto; left: 70vw; opacity: 32%; bottom: 10vh; scale: 0.8; } #photo3{position: absolute; width: 10vw; height: auto; top: 52vh; opacity: 72%; left: 62vw;scale: 0.8;} #photo4{position: absolute; width: 13vw; height: auto; top: 30vh; left: 78vw; opacity: 80%; scale: 0.8;} #photo5{position: absolute; width: 12vw; height: auto; top: 8vh; left: 62.8vw; scale: 1;}
 #about{
     position: relative;

@@ -18,8 +18,9 @@
       <img src="Loading.gif" id="loadingicon">
     </div>
     <div id="header">
-        
+      <a href="#goated"><button id="Aboutme">About Me</button></a><a href="#profile"><button id="myprofile" >Profile</button></a><a href="#Mywork"><button id="myprojects">Projects</button></a><a href="#experience"><button id="myexperience">Experience</button></a>
     </div>
+    <div id="highlight"></div>
     <div id="goated">
         <h2 id="about">Hi, I'm <b>Prabhmeet Singh</b>, a Software Developer and I design</br>
             and develop digital applications. Being a recent graduate,</br>
@@ -93,9 +94,39 @@
     </div>
     <script>
       setTimeout(function() {
-  document.querySelector('.Loading-container').style.opacity = 0;
-  document.querySelector('.Loading-container').style.scale = 0;
-}, 2500);
+        document.querySelector('.Loading-container').style.opacity = 0;
+        document.querySelector('.Loading-container').style.scale = 0;
+      }, 2500);
+      document.addEventListener("DOMContentLoaded", function () {
+  const highlight = document.getElementById("highlight");
+
+  // Define scroll ranges and their corresponding left positions for the rectangle highlighter
+  const scrollPositions = [
+    { min: 0, max: 500, left: "62.28vw", width: "7.62vw" },    // About Me
+    { min: 501, max: 1000, left: "71.2vw", width: "6vw" }, // Profile
+    { min: 1001, max: 1670, left: "77.82vw", width: "7.2vw" }, // Projects
+    { min: 1671, max: 2000, left: "86.2vw", width: "8.52vw" }  // Experience
+  ];
+
+  function updateHighlightPosition() {
+    const scrollY = window.scrollY;
+
+    // Check which range the scroll position falls into and update the highlighter position
+    for (let i = 0; i < scrollPositions.length; i++) {
+      const { min, max, left, width } = scrollPositions[i];
+
+      if (scrollY >= min && scrollY <= max) {
+        highlight.style.left = left;
+        highlight.style.width = width;
+        break;
+      }
+    }
+  }
+
+  // Event listener for scrolling
+  window.addEventListener("scroll", updateHighlightPosition);
+});
+
     </script>
   </body>
 </html>

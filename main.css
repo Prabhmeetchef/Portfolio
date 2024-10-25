@@ -232,13 +232,13 @@ html{
     position: relative;
     height: 12vh; border-radius: 20px; border: solid black 2px; 
     width: auto;
-    top: 2vh; left: 12vw;
+    top: 2vh; left: 13.2vw;
 }
 #box2image{
     position: relative;
     height: 12vh; border-radius: 80px; border: solid black 2px;
     width: auto;
-    top: 2vh; left: 12vw;
+    top: 2vh; left: 13.2vw;
 }
 #Connect{
     position:absolute;

@@ -9,10 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Pacifico&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width:499px)"/>
-    <link rel="stylesheet" href="main.css" media="screen and (min-width:500px)"/>
-  </head>
-
-
+    <link rel="stylesheet" href="main.css" media="screen and (min-width:500px)"/></head>
   <body>
     <div class="Loading-container"><h1 id="loadingtext">Loading</h1>
       <img src="Loading.gif" id="loadingicon">
@@ -22,19 +19,19 @@
     </div>
     <div id="highlight"></div>
     <div id="goated">
-        <h2 id="about">Hi, I'm <b>Prabhmeet Singh</b>, a Software Developer and I design</br>
-            and develop digital applications. Being a recent graduate,</br>
-            I'm eager to join a talented team of Software Developers.</br>
+        <h2 id="about">Hi, I'm <b>Prabhmeet Singh</b>, a Software Developer and I design
+            and develop digital applications. Being a recent graduate,
+            I'm eager to join a talented team of Software Developers.
             To explore my skills and projects get scrolling!
         </h2>
         <img  id="mypfp" src="Photo.png">
-        <a href="Resume.pdf" target="_blank"><button id="Myresume">My Resume</button></a>
+        <a href="Resume.pdf" target="_blank"><button id="Myresume">My Resume <img src="2990159.png" style="inline-size: 10%;"/></button></a>
     </div>
     <div id="megagoated">
       <div id="profile">
         <div id="skillbox">
         <h1 id="role">
-        Software Developer / Web Developer
+        Software Developer/ Web Developer
         </h1>
         <h1 id="lang">Languages I speak:</h1>
         <h2 id="skills">HTML, CSS, Javascript, Ruby, C++, Java, SQL </h2>
@@ -72,15 +69,15 @@
           <img src="Vector 1.png" id="vec"/><img src="Ellipse 1.png" id="ellipse1"/> <img src="Ellipse 2.png" id="ellipse2"/>
           <h1 id="role1">Associate Software Trainee</h1>
           <h2 id="corp1">Incture Technologies [January 2024 - May 2024]<h2>
-          <h2 id="desc1">Completed numerous assignments related to Spring and Spring Boot applications,<br>
-            gaining a strong foundation in core Java principles and best practices. Through <br>
-            these projects, I gained proficiency in error handling, API development, and MySQL,<br>
+          <h2 id="desc1">Completed numerous assignments related to Spring and Spring Boot applications,
+            gaining a strong foundation in core Java principles and best practices. Through
+            these projects, I gained proficiency in error handling, API development, and MySQL,
             enabling me to create robust Spring applications.
         </div>
         <div>
           <h1 id="role2">UI/UX Engineer, Front-end Developer</h1>
           <h2 id="corp2">Atominfra [October 2024 - Present]</h2>
-          <h2 id="desc2">Took charge of Design and also developed and maintained responsive front-end<br> code using modern web technologies (HTML, CSS, Bootstrap, tailwind, reactjs and nextjs).<br> Ensured cross-browser compatibility and optimized performance for various <br>devices and screen sizes.</h2>
+          <h2 id="desc2">Took charge of Design and also developed and maintained responsive front-end code using modern web technologies (HTML, CSS, Bootstrap, tailwind, reactjs and nextjs). Ensured cross-browser compatibility and optimized performance for various devices and screen sizes.</h2>
         </div>
         </div>
         <h1 id="Connect">Want to know more? <b>Let's Connect!</b></h1>
@@ -97,6 +94,7 @@
         document.querySelector('.Loading-container').style.opacity = 0;
         document.querySelector('.Loading-container').style.scale = 0;
       }, 2500);
+      if (window.matchMedia("(min-width: 580px)").matches) {
       document.addEventListener("DOMContentLoaded", function () {
   const highlight = document.getElementById("highlight");
 
@@ -123,7 +121,37 @@
   }
   // Event listener for scrolling
   window.addEventListener("scroll", updateHighlightPosition);
+});}
+else{
+  
+  document.addEventListener("DOMContentLoaded", function () {
+  const highlight = document.getElementById("highlight");
+
+  // Define scroll ranges and their corresponding left positions for the rectangle highlighter
+  const scrollPositions = [
+    { min: 0, max: 500, left: "7vw", width: "21vw" },    // About Me
+    { min: 501, max: 1000, left: "32.2vw", width: "15.72vw" }, // Profile
+    { min: 1001, max: 1670, left: "50.82vw", width: "19.2vw" }, // Projects
+    { min: 1671, max: 2000, left: "72.2vw", width: "24.42vw" }  // Experience
+  ];
+  function updateHighlightPosition() {
+    const scrollY = window.scrollY;
+
+    // Check which range the scroll position falls into and update the highlighter position
+    for (let i = 0; i < scrollPositions.length; i++) {
+      const { min, max, left, width } = scrollPositions[i];
+
+      if (scrollY >= min && scrollY <= max) {
+        highlight.style.left = left;
+        highlight.style.width = width;
+        break;
+      }
+    }
+  }
+  // Event listener for scrolling
+  window.addEventListener("scroll", updateHighlightPosition);
 });
+}
     </script>
   </body>
 </html>

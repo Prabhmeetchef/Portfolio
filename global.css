@@ -76,7 +76,6 @@ body{
       -webkit-transform: scale(0);
       transform: scale(0);
     }
-  
     30%,
     70% {
       opacity: 1;
@@ -84,13 +83,11 @@ body{
       transform: scale(1);
     }
   }
-  
   .honeycomb {
     height: 24px;
     position: relative;
     width: 24px;
   }
-  
   .honeycomb div {
     -webkit-animation: honeycomb 2.1s infinite backwards;
     animation: honeycomb 2.1s infinite backwards;
@@ -203,16 +200,16 @@ header{
     width: 665px;
     align-items: center;
 }
-#button1{
+.button1{
     padding: 18px;
-    color: white;
+    color: #585757;
     border: none;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: "Roboto";
+    font: normal normal 500 18px "Roboto", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
     border-radius: 8px;
     width: 130px;
-    background-color: black;
+    background-color: transparent;
 }
 .about{
     justify-content: space-between;
@@ -491,10 +488,17 @@ footer{
     gap: 10px;
 }
 #icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     border: none;
     width: 46px;
     height: 46px;
+}
+#icon-container:hover{
+    scale: 1.02;
+    border: solid black;
 }
 #resume{
     border-radius: 10px;
@@ -523,7 +527,17 @@ footer{
     width: 30px;
     height: 30px;
 }
-
+.button1.active{
+    background-color: black;
+    color: white;
+}
+#resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 150px;
+}
 
 
 

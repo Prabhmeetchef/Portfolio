@@ -178,7 +178,7 @@ header{
     margin: 0px;
     width: 100vw;
     height: 8vh;
-    min-height: 65px;
+    min-height: 70px;
     z-index: 500;
     background: black;
     box-shadow: 10px 10px 20px black;
@@ -237,6 +237,7 @@ header{
     text-align:justify;
     color: white;
     width: 352px;
+    font-weight: 400;
 }
 .description {
     position: relative;

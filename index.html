@@ -15,6 +15,14 @@
   
   
 
+
+
+
+
+
+
+
+
     <body>
       <div class="Loading-container">
         <div class="honeycomb">
@@ -29,11 +37,11 @@
     </div>
     <header>
       <div class="header-container">
-      <a href="#about"><button id="button1">About</button></a>
-      <a href="#profile"><button id="button1">Experience</button></a>
-      <a href="#Mywork"><button id="button1">Skills</button></a>
-      <a href="#experience"><button id="button1">Projects</button></a>
-      <a href="#goated"><button id="button1">Contact</button></a>
+      <button class="button1" data-target="about">About</button>
+      <button class="button1" data-target="experience">Experience</button>
+      <button class="button1" data-target="skills">Skills</button>
+      <button class="button1" data-target="projects">Projects</button>
+      <button class="button1" data-target="contact">Contact</button>
       </div>
     </header>
     <div class="header-container"></div>
@@ -145,79 +153,34 @@
         </div>
     </div>
   </section>
-    <footer>
+    <footer class="contact">
         <div class="icons">
           <a href="https://github.com/Prabhmeetchef" target="_blank"><button id="icon-container" class="gb"><img id="icon" src="github.png"></button></a>
           <a href="tel:+917893528195"><button id="icon-container" class="pe"><img id="icon" src="phone.png"></button></a>
           <a href="https://www.linkedin.com/in/prabhmeet-singh-11446699w/"><button id="icon-container" class="ln"><img id="icon" src="linkedin.png"></button></a>
           <a href="mailto:prabhmeetsinghns1000@gmail.com"><button id="icon-container" class="el"><img id="icon" src="email.png"></button></a>
         </div>
-        <a href="Resume_new1.pdf"><button id="resume">See Resume</button></a>
+        <a href="Resume_new1.pdf" target="_blank"><button id="resume">See Resume<img src="arrow.png" /></button></a>
     </footer>
   </div>
-    <script>
-      setTimeout(function() {
-        document.querySelector('.Loading-container').style.opacity = 0;
-        document.querySelector('.Loading-container').style.scale = 0;
-      }, 2500);
-      if (window.matchMedia("(min-width: 580px)").matches) {
-      document.addEventListener("DOMContentLoaded", function () {
-  const highlight = document.getElementById("highlight");
-
-  // Define scroll ranges and their corresponding left positions for the rectangle highlighter
-  const scrollPositions = [
-    { min: 0, max: 500, left: "62.28vw", width: "7.62vw" },    // About Me
-    { min: 501, max: 1000, left: "71.2vw", width: "6vw" }, // Profile
-    { min: 1001, max: 1670, left: "77.82vw", width: "7.2vw" }, // Projects
-    { min: 1671, max: 2000, left: "86.2vw", width: "8.52vw" }  // Experience
-  ];
-  function updateHighlightPosition() {
-    const scrollY = window.scrollY;
-
-    // Check which range the scroll position falls into and update the highlighter position
-    for (let i = 0; i < scrollPositions.length; i++) {
-      const { min, max, left, width } = scrollPositions[i];
-
-      if (scrollY >= min && scrollY <= max) {
-        highlight.style.left = left;
-        highlight.style.width = width;
-        break;
-      }
-    }
-  }
-  // Event listener for scrolling
-  window.addEventListener("scroll", updateHighlightPosition);
-});}
-else{
-  
-  document.addEventListener("DOMContentLoaded", function () {
-  const highlight = document.getElementById("highlight");
-
-  // Define scroll ranges and their corresponding left positions for the rectangle highlighter
-  const scrollPositions = [
-    { min: 0, max: 500, left: "7vw", width: "21vw" },    // About Me
-    { min: 501, max: 1000, left: "32.2vw", width: "15.72vw" }, // Profile
-    { min: 1001, max: 1670, left: "50.82vw", width: "19.2vw" }, // Projects
-    { min: 1671, max: 2000, left: "72.2vw", width: "24.42vw" }  // Experience
-  ];
-  function updateHighlightPosition() {
-    const scrollY = window.scrollY;
-
-    // Check which range the scroll position falls into and update the highlighter position
-    for (let i = 0; i < scrollPositions.length; i++) {
-      const { min, max, left, width } = scrollPositions[i];
-
-      if (scrollY >= min && scrollY <= max) {
-        highlight.style.left = left;
-        highlight.style.width = width;
-        break;
-      }
-    }
-  }
-  // Event listener for scrolling
-  window.addEventListener("scroll", updateHighlightPosition);
-});
-}
-    </script>
+  <script>
+    document.querySelectorAll(".button1").forEach((button) => {
+      button.addEventListener("click", function () {
+        const targetClass = this.getAttribute("data-target");
+        const targetElement = document.querySelector("." + targetClass);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth", block: "center" }); // Centers the section
+          }
+          // Remove 'active' from all buttons first
+          document.querySelectorAll(".button1").forEach((btn) => btn.classList.remove("active"));
+          // Add 'active' class to clicked button
+          this.classList.add("active");
+          // Remove 'active' after 2 seconds
+          setTimeout(() => {
+            this.classList.remove("active");
+          }, 2600);
+        });
+      });
+  </script>
   </body>
 </html>

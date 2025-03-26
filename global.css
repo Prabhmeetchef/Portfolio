@@ -185,7 +185,7 @@ header{
     padding: 2px;
     align-items:center;
     justify-content: space-between;
-    background-color: white;
+    background-color: #191919;
     height: 60px;
     width: 665px;
     border-radius: 8px;
@@ -202,7 +202,7 @@ header{
 }
 .button1{
     padding: 18px;
-    color: #585757;
+    color: #bababa;
     border: none;
     font: normal normal 500 18px "Roboto", sans-serif;
     cursor: pointer;
@@ -477,11 +477,12 @@ footer{
     display: flex;
     align-items:center;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(33, 33, 33);
     height: 60px;
     width: 590px;
     border-radius: 10px;
     gap: 200px;
+    border: solid 1px #575757;
 }
 .icons{
     display: flex;
@@ -726,7 +727,7 @@ footer{
         padding: 2px;
         align-items:center;
         justify-content: space-between;
-        background-color: white;
+        background-color: rgb(56, 56, 56);
         height: 42px;
         width: 92vw;
         min-width: 320px;
@@ -739,13 +740,13 @@ footer{
         border: 1px solid #191919; /* Corrected border syntax */
         border-radius: 10px;
         flex-direction: column;
-        height: 3070px;
+        height: 2990px;
         width: 92vw;
         align-items: center;
     }
     .button1{
         padding: 10px;
-        color: #585757;
+        color: #bababa;
         border: none;
         font: normal normal 500 15px "Roboto", sans-serif;
         cursor: pointer;
@@ -1026,12 +1027,13 @@ footer{
         display: flex;
         align-items:center;
         justify-content: center;
-        background-color: white;
+        background-color: rgb(33, 33, 33);
         height: 132px;
         width: 82vw;
         border-radius: 10px;
         flex-direction: column;
         gap: 20px;
+        border: rgb(59, 59, 59) solid 1px;
     }
     .icons{
         display: flex;
